@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon.eot?myii71');
+	src:url('icomoon.eot?#iefixmyii71') format('embedded-opentype'),
+		url('icomoon.ttf?myii71') format('truetype'),
+		url('icomoon.woff?myii71') format('woff'),
+		url('icomoon.svg?myii71#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+/*	speak: none;*/
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;*/
+}
+
+.icon-envelope:before {
+	content: "\e613";
+}
+.icon-email2:before {
+	content: "\e614";
+}
+.icon-file-settings:before {
+	content: "\e60c";
+}
+.icon-file-add:before {
+	content: "\e60d";
+}
+.icon-email:before {
+	content: "\e600";
+}
+.icon-graph:before {
+	content: "\e601";
+}
+.icon-search:before {
+	content: "\f002";
+}
+.icon-sign-out:before {
+	content: "\f08b";
+}
+.icon-sign-in:before {
+	content: "\f090";
+}
+.icon-stack-overflow:before {
+	content: "\f16c";
+}
+.icon-child:before {
+	content: "\f1ae";
+}
+.icon-user-plus:before {
+	content: "\f234";
+}
+.icon-user-times:before {
+	content: "\f235";
+}
+.icon-add-to-list:before {
+	content: "\e60e";
+}
+.icon-align-left:before {
+	content: "\e602";
+}
+.icon-align-right:before {
+	content: "\e603";
+}
+.icon-bell:before {
+	content: "\e604";
+}
+.icon-circle-with-cross:before {
+	content: "\e615";
+}
+.icon-clipboard:before {
+	content: "\e616";
+}
+.icon-cycle:before {
+	content: "\e612";
+}
+.icon-globe:before {
+	content: "\e617";
+}
+.icon-grid:before {
+	content: "\e611";
+}
+.icon-new-message:before {
+	content: "\e605";
+}
+.icon-thumbs-up:before {
+	content: "\e618";
+}
+.icon-tools:before {
+	content: "\e619";
+}
+.icon-user:before {
+	content: "\e606";
+}
+.icon-users:before {
+	content: "\e61a";
+}
+.icon-home:before {
+	content: "\e61b";
+}
+.icon-file-empty:before {
+	content: "\e607";
+}
+.icon-stack:before {
+	content: "\e60f";
+}
+.icon-cogs:before {
+	content: "\e61c";
+}
+.icon-tree:before {
+	content: "\e610";
+}
+.icon-menu:before {
+	content: "\e608";
+}
+.icon-link:before {
+	content: "\e609";
+}
+.icon-info:before {
+	content: "\e60a";
+}
+.icon-circle-down:before {
+	content: "\e60b";
+}

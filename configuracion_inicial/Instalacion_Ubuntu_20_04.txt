@@ -1,0 +1,117 @@
+Instalacion en Ubuntu 20.04
+
+1.   En la terminal (sudo su -) luego contraseña
+2.   En firefox hay que descargar y habilitar la extension (clear cache)
+3.   En la terminal (apt-get install vim)
+4. 	 En el centro de software de Ubuntu buscar e instalar Sublime Text 
+	 Si no funciona, En la terminal (sudo snap install sublime-text --clasic)
+5.   En el centro de software de Ubuntu buscar e instalar PgAdmin
+6.   En la terminal (apt-get install apache2)
+7.   En la terminal (apt-get install php) (Instala php7.4)
+8.   En la terminal (apt-get install php-dom) (Para que funcione la librería DOMPDF para generar PDF desde html)
+9.   En la terminal (apt-get install php7.4-mbstring) (Para que funcione la codificación UTF-8 en la librería DOMPDF para generar PDF desde html)
+10.  En la terminal (apt-get install postgresql) (Instala Postgres 12)
+11.  En la terminal (apt-get install git)
+12.  En la terminal (apt-get install php-zip)
+13.  En la terminal (apt-get install php-xml)
+14.  En la terminal (apt-get install php-ldap)
+15.  En la terminal (apt-get install php-gd)
+16.  En la terminal (apt-get install php-pgsql)
+17.  En la terminal (apt-get install samba)
+18.  En la terminal (apt-get install php-imap)
+19.  En la terminal (apt-get install phppgadmin)
+20.  En la terminal (vim /etc/phppgadmin/config.inc.php)[$conf['extra_login_security'] = false;] 
+21.  En la terminal (service postgresql restart)
+22.  En la terminal (sudo -i -u postgres psql)
+23.  En la terminal psql (ALTER USER postgres WITH PASSWORD 'postgres';)
+24.  En la terminal (service apache2 restart)	
+
+En la hoja que aparece sigo los pasos del archivo README.md
+
+
+28. Hay que crear la carpeta /jonas/imagenes/fotos_usuarios/  			(Para módulo de usuarios)
+29. Hay que crear la carpeta /jonas/bodega_pdf/adjuntos  				(Para módulo de radicación de entrada e interna)
+30. Hay que crear la carpeta /jonas/bodega_pdf/anexo_imap				(Para módulo de radicacion mail)
+31. Hay que crear la carpeta /jonas/bodega_pdf/correo_electronico		(Para módulo de radicacion mail)
+32. Hay que crear la carpeta /jonas/bodega_pdf/correo_electronico/baul	(Para módulo de radicacion mail)
+33. Hay que crear la carpeta /jonas/bodega_pdf/plantilla_generada_tmp  	(Para módulo de radicación de salida)
+34. Hay que crear la carpeta /jonas/bodega_pdf/plantilla_origen 	  	(Para módulo de radicación de salida)
+35. Hay que crear la carpeta /jonas/bodega_pdf/plantillas_html 	  		(Para módulo de radicación de salida)
+36. Hay que crear la carpeta /jonas/bodega_pdf/qr_usuario 		  		(Para generar sticker qr)
+37. Hay que crear la carpeta /jonas/bodega_pdf/radicados 	(Para módulo de radicación de entrada e interna)
+38. Hay que crear la carpeta /jonas/bodega_pdf/tmp (Para el módulo de digitalización masiva)
+
+39. Hay que crear la carpeta /jonas/correo_electronico/attachments (Para el módulo de radicación mail)
+40. Hay que crear la carpeta /jonas/correo_electronico/BODEGA (Para el módulo de radicación mail)
+
+
+41. En la terminal (sudo chown -R www-data:www-data jonas)
+42. En la terminal (sudo chmod -R 775 jonas) Si no funciona dar permisos 777 (Solo para desarrollo)
+43. 
+	A la carpeta /jonas/bodega_pdf/tmp  darle click derecho y elegir la opcion de “recurso compartido de red local” y otorgar los siguientes permisos marcados con un chulito así:
+	- Compartir esta carpeta (Nombre compartido "tmp")
+	- Permitir a otras personas crear y eliminar archivos en esta carpeta
+	- Acceso invitado (Para personas sin una cuenta de usuario)
+	ó seguir los pasos planteados en el documento (https://docs.google.com/document/d/1xw1sIuWh4fT6-TPwqBKeTOOnMzfI3EbhHBYMEjRTDDI/edit?usp=sharing)
+ 
+	Nota---
+	Si aparece un error al intentar "Crear compartición" (La «red compartida» devolvió el error 255: net usershare add: cannot share path /var/www/html/jonas/bodega_pdf/tmp as we are restricted to only sharing directories we own.
+	Ask the administrator to add the line "usershare owner only = false" 
+	to the [global] section of the smb.conf to allow this.) 
+	Hay que agregar al archivo (vim /etc/samba/smb.conf) En las variables globales agregar  la linea (usershare owner only = False) luego reiniciar el servicio (/etc/init.d/samba-ad-dc restart)
+
+44. Crear el archivo login/conexion2.php(
+<?php
+	$host = "localhost";
+	$puerto = "5432";
+	$dbname = "jonas2";
+	$user = "postgres";  	$password = "postgres"; 
+	$conectado = pg_connect("host=$host port=$puerto dbname = $dbname user= $user password = $password") 
+				or die 
+				("No pude conectarme con la base de datos 1, revisa las variables de conexión por favor.");
+?>
+)
+
+45. Copiar y pegar la imagen del adminstrador (imagenes/fotos_usuarios/admin.png)
+46. Hay que crear la imagen /jonas/imagenes/iconos/logo_largo.png con (163 px ancho y 70 px de altura)
+47. Hay que crear la imagen /jonas/imagenes/encabezado_radicado.png con (728 px ancho y 140 px de altura)
+48. Hay que crear la imagen /jonas/imagenes/pie_de_pagina_radicado.png con (553 px ancho y 113 px de altura)
+	
+44. Al crear tablas en la base de datos a veces genera error por permisos. Por cada tabla creada, se debe poner el siguiente comando ( GRANT ALL PRIVILEGES ON TABLE subseries TO gammacor_jonas) ó si es en Cpanel hay que dar click en la página Bases de datos PostgreSQL al botón usuarios_actuales/sincronizar permisos.
+45. Se debe configurar php.ini con los siguientes parámetros:
+Para editar el php.ini se encuentra en ubuntu 18.04 en la ruta (vim /etc/php/7.2/apache2/php.ini)
+Debe ingresar como root y cambiar los valores:
+
+ 	upload_max_filesize = 2M  // Por defecto
+  	upload_max_filesize = 8M
+
+  	Luego reiniciar servicio (/etc/init.d/apache2 restart)
+
+46. En el archivo envio_mail/mail.php hay que cambiar la linea "from"=>["mail"=>"noresponder@??????com","name"=>"Notificador Automatico Jonas-????"]
+
+
+El comando "TAIL" es (tail -f /var/log/apache2/error.log)
+
+Para mirar tamaño de carpeta es comando (du -bsh log/)
+
+
+/* Para sacar el backup de la base de datos */
+1. Va al phppgadmin de Jonas
+2. Selecciona la base de datos (Primero jonas2, luego hace lo mismo con jonas_log2)
+3. Selecciona "Exportar" (Tiene la imagen de un Diskette en la esquina superior derecha)
+4. En formato selecciona "Estructura y datos" y en el select "SQL"
+5. En opciones "Mostrar" para que lo vea en el navegador
+6. CTRL + a luego CTRL + c
+7. Crea un archivo .sql con el nombre del backup (backup_Villeta_05_Ene_2021.sql)
+8. Quita todo el contenido del archivo y pega (CTRL + v)
+9. Guarda el archivo de backup en formato .sql (CTRL + s)
+
+/* Para restaurar la base de datos */
+1. Ingresa a la terminal de linux
+2. Debe pegar y ejecutar el comando (psql -U postgres -W -h localhost jonas2 < backup_Villeta_05_Ene_2021.sql) 
+	psql -U usuario_de_base_de_datos -W -h localhost nombre_base_de_datos < backup_en_formato_sql.sql
+3. Pide la contraseña (la de la base de datos)	
+
+
+/* Pasos para revisar versiones previas de Jonas. */
+1. Si en el archivo admin_expedientes/index_expedientes.php en la linea 24 el ciclo de los años va hasta el año actual (2021)

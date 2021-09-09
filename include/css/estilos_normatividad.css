@@ -1,0 +1,16 @@
+.center{
+	text-align: center;
+}
+.encabeza td{
+	background-color: #e0e6e7;
+	font-size: 20px;
+  	padding: 10px;
+}
+.modif:hover{
+	background-color: #a8bac6;
+}
+.row{
+	background-color: #D8D8D8;
+	font-size: 20px;
+	text-align: center;
+}

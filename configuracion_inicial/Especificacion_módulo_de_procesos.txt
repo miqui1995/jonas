@@ -1,0 +1,16 @@
+Especificacion módulo de procesos
+
+* Cada proceso es asociado a un número de expediente.
+* Por cada proceso hay un tiempo total de trámite.
+* Se debe definir el tiempo total del trámite.
+* Por cada trámite hay una cantidad de actividades contada por dias.
+* La suma de todas las actividades no puede exceder el tiempo total del trámite.
+* Se debe definir una fecha de inicio por cada proceso.
+* Se debe crear una fecha de manera dinámica de inicio y final de cada actividad.
+* Debe dar semaforo o alerta sobre avance del trámite específico mostrando porcentaje de progreso en dias calendario y dias laborales. ( Tener en cuenta la duración definida y la real )
+* Debe dar semaforo o alerta sobre avance del trámite en general mostrando porcentaje de progreso en dias calendario y dias laborales. ( Tener en cuenta la duración definida y la real ) 
+* Funcion para contar los dias habiles
+* Administrador de trámites con id, nombre, descripcion, estado(Activo/Inactivo)
+* Debe permitir observaciones en el registro de cada actividad sea que suba archivo adjunto o solo sea la revision/observacion.
+* Estados del proceso. (Nuevo - En proceso - En espera - Finalizado - Rechazado)
+* Tabla de registros de proceso : (Id - id_expediente - id_tramite - fecha_proceso/actividad - id_funcionario_creacion - observacion - )

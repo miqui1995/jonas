@@ -1,0 +1,186 @@
+
+.form input{ /* Estilo de la barra del buscador e input internos */
+	/*background-color:#FFFFFF;*/
+	border-radius: 8px;
+	padding: 6px;
+	width: 95%;
+}
+#ventana{ /* Formato de la ventana modal del Formulario de Agregar Municipio */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana .form{ /* Formato del formulario Nuevo Municipio*/
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	color: #666;
+	height: auto;
+	left: 30%;
+	padding: 25px;
+	position: absolute;
+	right: 30%;
+	text-align: center;
+	top: 20%;
+	width: auto;
+}
+#ventana .form table{ /* Formato tabla en formulario Agregar Nuevo Municipio */
+	text-align: left;
+	width: 100%;
+}
+#ventana2{ /* Formato de la ventana modal de Modificar Municipio */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana2 .form{ /* Centrar formulario Modificar Municipio */
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	color: #666;
+	height: auto;
+	left: 20%;
+	padding: 25px;
+	position: absolute;
+	right: 20%;
+	text-align: center;
+	top: 20%;
+	width: auto;
+}
+#ventana2 .form table{ /* Formato tabla en formulario Modificar Municipio */
+	text-align: left;
+	width: 100%;
+}
+.cerrar{
+	font-weight: 900;
+	text-align: right;
+}
+.cerrar a{
+	color: red;
+}
+#desplegable_resultados{
+	min-height: 100px;
+	width: 90%;
+}
+.center{
+	text-align: center;
+}
+
+/*Se inicia estilos para el resultado de buscador_municipios.php*/
+.fila1{
+	background-color: #e3e8ec;
+}
+.fila2{
+	background-color: #D8D8D8;
+}
+.art{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	padding: 5px;
+	padding-left: 15px;
+	width: auto;
+}
+.art:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art a{
+	display: block;	
+	text-decoration: none;
+}
+.art a:hover{
+	color: #FFFFFF;
+}
+.art span{
+	font-size: 15px;
+}
+.art1{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: 30px;
+	padding: 5px;
+	padding-left: 15px;
+	width: auto;
+}
+.art1:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art1 a{
+	display: block;	
+	text-decoration: none;
+}
+.art1 a:hover{
+	color: #FFFFFF;
+}
+.art1 span{
+	font-size: 15px;
+}
+/*Fin de estilos para el resultado de buscador_municipios.php*/
+
+/* Se inicia estilos al form de municipios cuando es movil o ventana menos de 768px */			
+@media screen and (max-width: 768px){
+
+	#ventana{
+		color: #FFFFFF;
+		display: none;
+		height: auto; /*Si height es 100% hace la animacion de display hacia abajo*/
+		left: 0;
+		position: relative;
+		top: 0;
+		width: 100%;
+	}
+	#ventana .form{
+		background: #585858;
+		border-radius: 20px;
+		color:#FFFFFF;
+		height: auto;
+		left: 5%;
+		padding: 5px;
+		position: absolute;
+		right: 5%;
+		top: 2px;
+		width: 90%;
+	}
+	#ventana .form table{/* Poner color blanco a letras en formulario Agregar Municipio */
+		color: #FFFFFF;
+	}
+	#ventana2{
+		color: #FFFFFF;
+		display: none;
+		height: auto; /*Si height es 100% hace la animacion de display hacia abajo*/
+		left: 0;
+		position: relative;
+		top: 0;
+		width: 100%%;
+	}
+	#ventana2 .form{
+		background: #585858;
+		border-radius: 20px;
+		color:#FFFFFF;
+		height: auto;
+		left: 5%;
+		padding: 5px;
+		position: absolute;
+		right: 5%;
+		top: 2px;
+		width: 90%;
+	}
+	#ventana2 .form table{/* Poner color blanco a letras en formulario Modificar Municipio */
+		color: #FFFFFF;
+	}
+}
+/* Fin estilos al form cuando es movil o ventana menos de 768px de principal3.php*/	

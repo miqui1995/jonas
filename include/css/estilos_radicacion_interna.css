@@ -1,0 +1,605 @@
+#titulo_plantilla_radicacion_interna{
+    text-align  : center;
+    cursor      : default;
+}
+#titulo_plantilla_radicacion_interna #vista_completa{
+    background      : #056082;
+    border-radius   : 20px;
+    cursor          : pointer;
+    float           : right;
+    margin          : 3px 10px 0px -320px;
+    border          : 2px solid #000;
+}
+#vista_completa:hover, #vista_completa:hover #input_vista_completa{
+    background-color: #fff !important;
+}
+#vista_completa:hover #imagen_vista_completa{
+    filter: invert(0) !important;
+}
+#vista_completa:hover #input_vista_completa{
+    color: #000 !important;
+}
+#titulo_plantilla_radicacion_interna #vista_completa #imagen_vista_completa{
+    width       : 18px;
+    float       : left;
+    margin      : 7px 8px 0px 14px;
+    filter      : invert(100);
+    transition  : filter 0.5s ease-in-out;
+}
+#titulo_plantilla_radicacion_interna #vista_completa #input_vista_completa{
+    background-color    : #056082;
+    border              : none;
+    color               : #fff;
+    font-size           : 20px;
+    cursor              : pointer;
+    display             : block;
+    margin              : 2.5px 0px 2.5px 40px;
+    transition          : background-color 0.0101s ease;
+}
+#regeresar_pantalla_normal{
+    background      : #347280;
+    border-radius   : 15px;
+    color           : #FFFFFF;
+    font-size       : 22px;
+    cursor          : pointer;
+    margin          : 10px 0px 0px 10px;
+    position        : fixed;
+    padding         : 11px;
+    opacity         : 0.5;
+    transition      : 2s;
+}
+#regeresar_pantalla_normal:hover{
+    opacity : 1 !important;
+}
+#regeresar_pantalla_normal:hover #regresar_texto_oculto{
+    width   : 265px !important;
+    color   : #fff !important;
+}
+#regeresar_pantalla_normal #imagen_vista_completa{
+    width       : 15px;
+    float       : left;
+    margin      : 7px 10px 0px 7px;
+    filter      : invert(100);
+    transition  : filter 0.5s ease-in-out;
+}
+#regeresar_pantalla_normal #regresar_texto_oculto{
+    width           : 39px;
+    transition      : 2s;
+    height          : 26px; color: #fff0;
+    display         : inline-block;
+    overflow        : hidden;
+    white-space     : nowrap;
+}
+#tabla1{
+    border          : 1px solid black;
+    margin-left     : auto;
+    margin-right    : auto;
+}
+#tabla1 #td_descipcion_codigo_serie{
+    width       : 4%;
+    text-align  :center;
+    cursor      : default;
+}
+#tabla1 #td_detalle_codigo_serie{
+    width           : 25%;
+    border-right    : 2px solid black;
+}
+#tabla1 #td_detalle_codigo_serie #codigo_serie{
+    padding     : 2px;
+    cursor      : pointer;
+    width       : 100%;
+}
+#tabla1 #td_descipcion_codigo_subserie{
+    width       : 5%;
+    text-align  :center;
+    cursor      : default;
+}
+#tabla1 #td_detalle_codigo_subserie{
+    width           : 23%;
+    border-right    : 2px solid black;
+}
+#tabla1 #td_detalle_codigo_subserie #codigo_subserie{
+    padding     : 2px;
+    cursor      : pointer;
+    width       : 100%;
+}
+#tabla1 #td_descipcion_expediente{
+    width       : 11%;
+    text-align  :center;
+    cursor      : default;
+}
+#tabla1 #td_detalle_expediente{
+    width           : 30%;
+    border-right    : 2px solid black;
+    text-align      :center;
+}
+#tabla1 #td_detalle_expediente #seleccionar_expediente{
+    border-radius: 8px;
+    padding: 3px;
+    width: 95%;
+    margin: -4px 0px 0px -4px;
+    cursor: pointer;
+}
+#tabla1 #td_detalle_expediente #resultado_seleccionar_expediente{
+    overflow-x: auto;
+    max-height: 100px;
+    cursor: default;
+    height: 33px;
+    display: none;
+}
+#formulario_datos_radicado #tabla_formulario_salida{
+    width               : 100%;
+    background-color    : #fff;
+    margin              : 20px 0px 0px 0px;
+    border              : 20px solid rgba(0, 0, 0, 0.49);
+    display             : none;
+}
+#formulario_datos_radicado #tabla_formulario_salida #sangria_izquierda{
+    width: 8%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #texto_justificado{
+    width       : 84%;
+    text-align  : left;
+}
+#formulario_datos_radicado #tabla_formulario_salida #texto_justificado #contenedor_imagen_cabecera{
+    width       : 100%;
+    text-align  : center;
+}
+#formulario_datos_radicado #tabla_formulario_salida #sangria_derecha{
+    width: 8%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_fecha{
+    margin: 5% 0px 40px 0%;
+    font-size: 20px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_fecha #ubicacion{
+    width: 275px;
+    border: none;
+    background-color: #0000001a;
+    margin: -6px 8px 0.1% 0.1%;
+    float: left;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_fecha #quitar_ubicacion{
+    background-color: red;
+    width: 30px;
+    height: 38px;
+    margin: -6px 0px 0px 267px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    position: absolute;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_fecha #quitar_ubicacion #imagen_cerrar_ubicacion{
+    width: 20px;
+    margin: 8px 0px 0px 5px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_fecha #ubicacion_resultados{
+    margin: -65px 0px 0px 5px;
+    background-color: #b9b9b9a1;
+    width: 289px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_fecha #ubicacion_null{
+    width: 287px;
+    margin-top: 14px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios{
+    margin-bottom: 2%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #tratamiento{
+    -moz-appearance     : none;
+    border              : 2px solid #6f6d6d87;
+    background-color    : #9d9d9d1a;
+    border-radius       : 15px;
+    padding             : 4px;
+    font-size           : 20px;
+    width               : 120px;
+    float               : left;
+    cursor              : pointer;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #div_agregar_destinatario{
+    border          : 2px solid rgba(255,255,255,.5);
+    border-radius   : 20px;
+    cursor          : pointer;
+    height          : 25px;
+    width           : 210px;
+    background      : #347280a1;
+    font-size       : 120%;
+    color           : #ffffff;
+    margin-left     : 2px;
+    float           : left;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #div_agregar_destinatario:hover #imagen_vista_completa{
+    filter: invert(0) !important;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #div_agregar_destinatario #imagen_vista_completa{
+    width       : 13px;
+    float       : left;
+    margin      : 6px 6px 0px 7px;
+    filter      : invert(100);
+    transition  : filter 0.5s ease-in-out;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #input_agregar_usuario_inf{
+    display         : none;
+    margin-left     : 10px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #input_agregar_usuario_inf #usuario_actual_nuevo_inf{
+    width               : 322px;
+    margin-top          : 4px;
+    background-color    : #66666612;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #input_agregar_usuario_inf #desplegable_resultados_inf{
+    display             : none;
+    cursor              : default;
+    max-height          : 200px;
+    overflow-y          : scroll;
+    width               : 318px;
+    margin-top          : 5px;
+    background-color    : rgba(0, 0, 0, 0.05);
+    padding             : 10px; border-radius: 15px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #tratamiento_and_destinatarios #input_agregar_usuario_inf .errores_destinatarios{
+    margin-top: 5px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios{
+    margin-bottom: 8%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios{
+    width: 463px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario{
+    border              : #2D9DC64F 2px solid;
+    font-size           : 20px;
+    display             : block;
+    margin-bottom       : 5%;
+    background-color    : #D2D2D23D;
+    border-radius       : 10px;
+    height              : 60px;
+    padding             : 5px;
+}
+.destinatario_usuario:hover .info, .destinatario_usuario:hover .boton_cerrar_usuario{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.destinatario_usuario:hover .errores{
+    display: none !important;
+}
+.destinatario_usuario:hover .detalle_destinatario, .destinatario_usuario:hover .destinatario_usuario{
+    cursor: default !important;
+}
+.destinatario_usuario:hover .info_firmante, .destinatario_usuario:hover .boton_cerrar_usuario_firmante{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.destinatario_usuario:hover .info3, .destinatario_usuario:hover .boton_cerrar_usuario3{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .cargo_usuario_listar{
+    background-color    : #0d080214;
+    border              : none;
+    border-radius       : 8px;
+    padding             : 6px;
+    width               : 360px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .info{
+    visibility      : hidden;
+    opacity         : 0;
+    margin          : 2% 0px 0px 0px;
+    border-radius   : 15px;
+    position        : absolute;
+    z-index         : 1;
+    cursor          : default;
+    background      : #E0E3E7;
+    width           : 440px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .info #mas_info{
+    border          : #2D9DC6 2px solid;
+    border-radius   :15px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .info #mas_info #foto_info{
+    width: 1%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .info #mas_info #foto_info #foto_info_mas{
+    width: 50px;
+    border-radius: 10px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .info #mas_info #info_td{
+    width: 39%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .boton_cerrar_usuario{
+    visibility          : hidden;
+    opacity             : 0;
+    background-color    :red;
+    border-radius       : 10px;
+    margin              : -36px -8px 0px 45px;
+    cursor              : pointer;
+    width               : 45%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #destinatarios #tabla_destinatarios .destinatario_usuario .boton_cerrar_usuario #imagen_cerrar{
+    width: 100%;
+}
+.img_cerrar:hover{
+    cursor: pointer !important;
+}
+#formulario_datos_radicado #tabla_formulario_salida #fecha2{
+    margin: 5% 0px 35px 0%;
+    font-size: 20px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #fecha2 #ubicacion2{
+    width: 275px;
+    border: none;
+    background-color: #0000001a;
+    margin: -6px 8px 0.1% 0.1%;
+    float: left;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #fecha2 #quitar_ubicacion2{
+    background-color: red;
+    width: 30px;
+    height: 38px;
+    margin: -6px 0px 0px 463px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    position: absolute;
+}
+#formulario_datos_radicado #tabla_formulario_salida #fecha2 #quitar_ubicacion2 #imagen_cerrar_ubicacion2{
+    width: 20px;
+    margin: 8px 0px 0px 5px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #fecha2 #ubicacion2_resultados{
+    margin: 15px 0px 0px 199px;
+    background-color: #b9b9b9a1;
+    width: 289px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#formulario_datos_radicado #tabla_formulario_salida #fecha2 #ubicacion_null2{
+    width: 287px;
+    margin-top: 14px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_asunto{
+    margin-top      : 5%;
+    margin-bottom   : 3%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_asunto #asunto_texto{
+    font-weight     : bold;
+    font-size       : 120%;
+    margin-bottom   : 2%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_asunto #asunto{
+    width               : 70%;
+    border              : none;
+    background-color    : #0000001a;
+    margin              : 0px 0px 1% 1%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_asunto #asunto_max{
+    width   : 75%;
+    margin  : 0px 0px 1% 1%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_asunto #asunto_min{
+    width   : 75%;
+    margin  : 0px 0px 1% 1%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_asunto #asunto_null{
+    width   : 75%;
+    margin  : 0px 0px 1% 1%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #atentamente{
+    margin-bottom: 1%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #atentamente #despedida{
+    padding             : 2px;
+    -moz-appearance     : none;
+    border              : 2px solid #6f6d6d87;
+    background-color    : #9d9d9d1a;
+    color               : #666;
+    border-radius       : 15px;
+    padding             : 4px;
+    font-size           : 20px;
+    width               : 15%;
+    cursor              : pointer;
+    width               : 140px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_firmante{
+    margin-bottom: 10%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_firmante #firmante{
+    border              : none;
+    background-color    : #0000001c;
+    width               : 300px;
+    margin-bottom       : 1%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_firmante #sugerencias_firmante{
+    max-height          : 200px;
+    overflow            : scroll;
+    display             : none;
+    background-color    : rgba(0, 0, 0, 0.05);
+    margin-top          : 1%;
+    width               : 300px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_firmante #error_firmante{
+    width: 300px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #div_firmante #usuario_seleccionado_firmante{
+    width: 30%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado{
+    margin: 0px 100px 1px 100px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #anexos_texto{
+    margin-bottom: 2%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #anexos_texto #anexos_texto_mas{
+    float: left;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #anexos_texto .info_extra{
+    margin  : -4px 0.1px 0.1px 50px;
+    width   : 314px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto{
+    margin-bottom: 4%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #aprobado_texto_mas{
+    float: left;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #aprueba{
+    margin  : -4px 0px 0px 11px;
+    width   : 300px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #id_aprueba{
+    display: none;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #sugerencias_aprueba{
+    max-height          : 200px;
+    overflow            : scroll;
+    background-color    : rgba(0, 0, 0, 0.05);
+    margin              : 2px 0.1px 0.1px 106px;
+    width               : 311px;
+    border-radius       : 10px;
+    display             : none;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #usuario_seleccionado_aprueba{
+    float       : left;
+    margin-top  : -8px;
+    height      : 34px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #indicador_aprobado{
+    width       : 300px;
+    float       : right;
+    margin-top  : -10px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #indicador_aprobado .art_exp{
+    padding: 2px;
+    background: #2D9DC6B0;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #indicador_aprobado .art_exp .imgane_aprobado{
+    height: 25px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #aprueba_sin_resultados{
+    background      : red;
+    border-radius   : 10px;
+    box-shadow      : 0 0 10px rgba(0, 0, 0, 0.3);
+    color           : #FFFFFF;
+    display         : none;
+    font-size       : 12px;
+    padding         : 5px;
+    position        : relative;
+    text-align      : center;
+    width           : 300px;
+    margin-left     : 105px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #aprobado_texto #id_aprueba_null{
+    background      : red;
+    border-radius   : 10px;
+    box-shadow      : 0 0 10px rgba(0, 0, 0, 0.3);
+    color           : #FFFFFF;
+    display         : none;
+    font-size       : 12px;
+    padding         : 5px;
+    position        : relative;
+    text-align      : center;
+    width           : 300px;
+    margin-left     : 105px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #elaborado_texto{
+    margin-top: -13px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #elaborado_texto #elaborado_texto_mas{
+    float: left;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #elaborado_texto #id_elabora{
+    display: none;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #elaborado_texto #elabora{
+    width   : 300px;
+    margin  : -4px 0.1px 0.1px 14px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #elaborado_texto #sugerencias_elabora{
+    max-height          : 200px;
+    overflow            : scroll;
+    display             : none;
+    background-color    : rgba(0, 0, 0, 0.05);
+    margin-top          : 0.3%;
+    width               : 310px;
+    margin-left         : 107px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #elaborado_texto .usuario_elabora{
+    float: left;
+}
+#formulario_datos_radicado #tabla_formulario_salida #anexos_elaborado_aprobado #elaborado_texto #id_elabora_null{
+    background      : red;
+    border-radius   : 10px;
+    box-shadow      : 0 0 10px rgba(0, 0, 0, 0.3);
+    color           : #FFFFFF;
+    display         : none;
+    font-size       : 12px;
+    padding         : 5px;
+    text-align      : center;
+    width           : 300px;
+    margin-left     : 105px;
+}
+#formulario_datos_radicado #tabla_formulario_salida #sangria_izquierda_piecera{
+    width: 8%;
+}
+#formulario_datos_radicado #tabla_formulario_salida #piecera_td{
+    width: 84%;
+    text-align: left;
+}
+#formulario_datos_radicado #tabla_formulario_salida #piecera_td #piecera_mas{
+    width: 100%;
+    text-align: center;
+}
+#example1{
+    display: none;
+    height: 280px;
+}
+#botones_plantilla_radicacion_interna #seguir_pdf{
+    display: none;
+}
+#botones_plantilla_radicacion_interna #contenedor_boton_descargar_plantilla_respuesta{
+    display: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clases tomadas del editor de texto externo el tinymce */
+/*.tox-silver-sink{/* Objeto referenciado con clase que contiene un pequeño cuadro con opciones de cargar imágenes en el editor tinymce */
+    /*display: none !important;/* Se oculta el cuadro evitando conflictos con la interface y su imagen*/
+/*}
+/*.tox-tinymce{/* Objeto referenciado con clase que contiene todo el editor tinymce */
+    /*margin-bottom: 1% !important;/* Se da una margen inferior por una interface estética */
+    /*border-radius: 20px !important;/* Se redondean los bordes por una interface estética */
+/*}
+/* Fin clases tomadas del editor de texto externo el tinymce*/

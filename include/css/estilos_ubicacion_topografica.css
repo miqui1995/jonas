@@ -1,0 +1,344 @@
+/* La fuente Roboto Condensed ha sido importada en el archivo principal3.php y la hereda a admin_depe */
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed'); */
+.sobreposicion{
+	z-index: 100;
+}
+.readonly{
+	background: #F0F0F0;
+	border: 2px;
+}
+.form input{ /* Estilo de la barra del buscador e input internos */
+/*	background-color:#FFFFFF;   */
+	border-radius: 8px;
+	padding: 6px;
+	width: 95%;
+}
+#ventana{ /* Formato de la ventana modal de Agregar Nueva Dependencia */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana .form{ /* Centrar formulario Agregar Nueva Dependencia */
+	background-color: #F0F0F0;
+	border-radius: 20px;
+	color: #666;
+	height: auto;
+	left: 20%;
+	padding: 25px;
+	position: absolute;
+	right: 20%;
+	text-align: center;
+	top: 20%;
+	width: auto;
+}
+#ventana .form table{/* Formato tabla en formulario Agregar Nueva Dependencia */
+	text-align: left;
+	width: 100%;
+}
+#ventana .form table td{/*Distribuir en la mitad la tabla del formulario Agregar Nueva Dependencia*/
+	width: 50%;
+}
+#ventana2{ /* Formato de la ventana modal de Modificar Dependencia */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana2 .form{ /* Centrar formulario Modificar Dependencia */
+	background-color: #F0F0F0;
+	border-radius: 20px;
+	color: #666;
+	height: auto;
+	left: 20%;
+	padding: 25px;
+	position: absolute;
+	right: 20%;
+	text-align: center;
+	top: 20%;
+	width: auto;
+}
+#ventana2 .form table{ /* Formato tabla en formulario Modificar Dependencia */
+	text-align: left;
+	width: 100%;
+}
+#ventana2 .form table td{/*Distribuir en la mitad la tabla del formulario Modificar Dependencia*/
+	width: 50%;
+}
+#ventana3{ /* Formato de la ventana modal de Administrador de cajas */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana3 .form{ /* Centrar formulario Administrador de cajas */
+	background-color: #F0F0F0;
+	border-radius: 20px;
+	color: #666;
+	height: auto;
+	left: 20%;
+	padding: 25px;
+	position: absolute;
+	right: 20%;
+	text-align: center;
+	top: 20%;
+	width: auto;
+}
+#ventana3 .form table{/* Formato tabla en formulario Administrador de cajas */
+	text-align: left;
+	width: 100%;
+}
+#ventana3 .form table td{/*Distribuir en la mitad la tabla del formulario Administrador de cajas*/
+	width: 50%;
+}
+#ventana4{ /* Formato de la ventana modal de Mostrar Documentos en expediente */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana4 .form{ /* Centrar formulario Mostrar Documentos en expediente */
+	background-color: #F0F0F0;
+	border-radius: 20px;
+	color: #666;
+	height: 80%;
+	left: 5%;
+	padding: 25px;
+	position: absolute;
+	right: 5%;
+	text-align: center;
+	top: 5%;
+	width: 90%;
+}
+#ventana4 .form table{/* Formato tabla en formulario Mostrar Documentos en expediente */
+	/*text-align: left;*/
+	width: 100%;
+}
+.cerrar{
+	font-weight: 900;
+	text-align: right;
+}
+.cerrar a{
+	color: red;
+}
+#desplegable_resultados{
+	min-height: 20px;
+	width:100%;
+}
+.center{
+	text-align: center;
+}
+
+/*Se inicia estilos para el resultado de buscador_dependencias.php*/
+#sugerencias_identificacion{
+	display: none;		
+}
+.fila1{
+	background-color: #e3e8ec;
+}
+.fila2{
+	background-color: #D8D8D8;
+}
+.art{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: 50px;
+	padding: 5px;
+	width: auto;
+}
+.art:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art a{
+	display: block;	
+	padding: 5;
+	text-decoration: none;
+}
+.art a:hover{
+	color: #FFFFFF;
+}
+.art span{
+	font-size: 15px;
+}
+/*Fin de estilos para el resultado de buscador_dependencias.php*/
+/*Estilos campo "Codigo de la Dependencia" Formulario Agregar Nueva Dependencia*/
+.art1{
+	background-color: #F1F1F1;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: -35px;
+	padding: 5px;
+	width: auto;
+}
+.art1:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art1 a{
+	display: block;	
+	text-decoration: none;
+}
+.art1 a:hover{
+	color: #FFFFFF;
+}
+.art1 span{
+	font-size: 15px;
+}
+/*Fin estilos campo "Codigo de la Dependencia" Formulario Agregar Nueva Dependencia*/
+/*Estilos campo "Nombre de la Dependencia" Formulario Agregar Nueva Dependencia*/
+.art2{
+	background-color: #F1F1F1;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: -135px;
+	padding: 5px;
+	width: auto;
+}
+.art2:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art2 a{
+	display: block;	
+	text-decoration: none;
+}
+.art2 a:hover{
+	color: #FFFFFF;
+}
+.art2 span{
+	font-size: 15px;
+}
+/* Fin estilos campo "Nombre de la Dependencia" Formulario Agregar Nueva Dependencia*/
+/*Estilos campo "Dependencia Padre" Formulario Agregar Nueva Dependencia*/
+.art3{
+	background-color: #F1F1F1;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: -135px;
+	padding: 5px;
+	width: auto;
+}
+.art3:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art3 a{
+	display: block;	
+	text-decoration: none;
+}
+.art3 a:hover{
+	color: #FFFFFF;
+}
+.art3 span{
+	font-size: 15px;
+}
+/*Fin estilos campo "Dependencia Padre" Formulario Agregar Nueva Dependencia*/
+/* Estilos buscador de expedientes - cajas */
+.medio_div {
+	border-color 	: #B1B1B1; 
+	border-radius 	: 15px; 
+	border-style 	: solid; 
+	border-width 	: 5px; 
+	float 			: left; 
+	height 			: 80%;
+	overflow-y 		: scroll;
+	padding 	 	: 15px; 
+	width 			: 47%;
+}
+#search_expedientes{
+/*	background-color:#FFFFFF;   */
+	border-radius: 8px;
+	padding: 6px;
+	width: 95%;
+}
+/* Fin estilos buscador de expedientes - cajas */
+/*Se inicia estilos al form cuando es movil o ventana menos de 768px
+ de principal3.php*/			
+@media screen and (max-width: 768px){
+
+	#ventana{ /*Formato de la ventana modal de Agregar Nueva Dependencia(Moviles)*/
+		color: #FFFFFF;
+		display: none;
+		height: 100%; /*Si height es 100% hace la animacion de display hacia abajo*/
+		left: 0;
+		position: relative;
+		top: -150;
+		width: 100%;
+	}
+	#ventana .form table{/*Formato tabla en formulario Agregar Nueva Dependencia*/
+		width: 100%;
+	}
+	#ventana .form{
+		background-image: url("../../imagenes/bg-modal.png");		
+		background: #1C1C1C none repeat scroll 0 0;
+		border-radius: 20px;
+		color:#FFFFFF;
+		height: auto;
+		left: 5%;
+		padding: 5px;
+		position: absolute;
+		right: 5%;
+		top: 25%;
+		width: 90%;
+	}
+	#ventana2{
+		color: #FFFFFF;
+		display: none;
+		height: 100%; /*Si height es 100% hace la animacion de display hacia abajo*/
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	#ventana2 .form{
+		background-image: url("../../imagenes/bg-modal.png");
+		background: #1C1C1C none repeat scroll 0 0;
+		border-radius: 20px;
+		color:#FFFFFF;
+		height: auto;
+		left: 5%;
+		padding: 5px;
+		position: absolute;
+		right: 5%;
+		top: 25%;
+		width: 90%;
+	}
+	.input_text{ /*Color input de formularios*/
+		color: #FFFFFF;
+	}
+	.art1{
+		margin-left: -5px;
+	}
+	.art2{
+		margin-left: -5px;
+	}
+	.art3{
+		margin-left: -5px;
+	}
+}
+/* Fin estilos al form cuando es movil o ventana menos de 768px de principal3.php*/	

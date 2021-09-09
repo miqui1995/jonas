@@ -1,0 +1,925 @@
+/*Estilos para la pagina en general*/
+
+@font-face {
+    font-family : "Roboto";
+    font-weight : normal;
+    src         : local("?"), url("../iconos/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}
+* {
+    font-family     : "Roboto", sans-serif;
+    margin          : 0;
+    padding         : 0;
+}
+body {
+    background-color    : #F0F0F0;
+    color               : #666;
+    font-family         : "Roboto Condensed", sans-serif;
+    height              : 100%;
+    margin              : 0;
+}
+.center {
+    text-align: center;
+}
+.footer {
+    /* Estilos del footer */
+    /*padding-top : 5px;*/
+    /*clear: both;*/
+    color: #023859;
+    font-size: 14px;
+}
+.footer a {
+    color: #023859;
+}
+.footer a:hover {
+    color: #B40431;
+}
+.hidden {
+    display: none;
+}
+/*Fin estilos para la pagina en general*/
+
+/* Estilos para pestañas en entrada/lista_radicados.php*/
+
+ul.tabs {
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    float: left;
+    height: 32px;
+    /*--Set height of tabs--*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul.tabs li {
+    border-left: none;
+    border: 1px solid #999;
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    margin-bottom: -1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+ul.tabs li a {
+    border: 1px solid #fff;
+    color: #000;
+    display: block;
+    font-size: 1.2em;
+    outline: none;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul.tabs li a:hover {
+    background: #ccc;
+}
+/* Script para visualizar "cerrar" al dar hover pestañas */
+
+.contenedor {
+    background: #666;
+    color: #FFFFFF;
+    display: inline-block;
+    left: 0%;
+    position: absolute;
+    right: 100%;
+    transition: .5s ease;
+    width: auto;
+}
+.contenedor2 {
+    left: 100%;
+    right: 0;
+    width: 0;
+}
+ul.tabs li.focus {
+    background: #ccc;
+}
+.tab_a {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.boton_cerrar {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: red;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.contenedor:hover .boton_cerrar {
+    width: 15%;
+    left: 85%;
+}
+.img_cerrar {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 15%;
+    left: 15%;
+}
+/* Fin script para visualizar "cerrar" al dar hover pestañas */
+
+/* Fin estilos para pestañas en entrada/lista_radicados.php*/
+
+/*Estilo de encabezado para la pagina en general*/
+
+#encabezado {
+    background-image: url('../../imagenes/encabezado_principal.png');
+    background-size: 100% 80px;
+    color: #FFFFFF;
+    height: 80px;
+    width: 100%;
+    z-index: 500;
+}
+#encabezado nav ul {
+    /*Estilo cuadro redondeado listado*/
+    border-radius: 10px;
+    list-style: none;
+}
+#encabezado nav ul li {
+    /* Estilo de Iconos Superior Izquierda*/
+    border-top  : solid #2d9dc6 1px;
+    box-shadow  : 0px 0 #2D9DC6 inset;
+    display     : inline-block;
+    padding     : 5px 2px;
+    position    : relative;
+    transition  : all 0.5s;
+}
+#encabezado nav ul li:hover {
+    /*Animacion de llena caja otro color al hover*/
+    box-shadow      : 700px 0 #2D9DC6 inset;
+    border-radius   : 10px;
+}
+#encabezado nav ul li a {
+    /*Estilo inicial de los select*/
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 0px;
+    text-decoration: none;
+}
+#encabezado nav ul li a span {
+    /*Espacio entre icono y texto*/
+    font-size: 15px;
+    margin-right: 15px;
+}
+#encabezado nav ul li .children {
+    /*Estilo inicial cajas desplegadas */
+    background  : #011826;
+    color       : #FFFFFF;
+    display     : none;
+    position    : absolute;
+    width       : 400px;
+    z-index     : 1000;
+}
+#encabezado nav ul li .children li {
+    /*Estilo de borde inferior de cada caja*/
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    display: block;
+    overflow: hidden;
+}
+.boton_menu, .boton_menu_lateral {
+    /*Ocultar inicialmente menu y menu lateral*/
+    display: none;
+}
+/*Fin estilo de encabezado para la pagina en general*/
+
+/*Estilo de menu_izquierda para la pagina en general*/
+
+#menu_izquierda {
+    /*Estilo tamaño menu_izquierda*/
+    float: left;
+    position: relative;
+    width: 200px;
+    z-index: 20;
+}
+#menu_left div {
+    /*Estilo inicial menu_izquierda*/
+    background: black;
+    float: left;
+    width: 100%;
+    z-index: 900;
+}
+#menu_left nav ul {
+    /*Estilo borde redondeado caja principal*/
+    border-radius: 10px;
+    list-style: none;
+}
+#menu_left nav ul li {
+    /*Estilo inicial cajas menu_left*/
+    border-top  : solid #2d9dc6 1px;
+    box-shadow  : 0px 0 #2D9DC6 inset;
+    cursor      : pointer;
+    display     : block;
+    padding     : 5px 2px;
+    position    : relative;
+    transition  : all 0.5s;
+}
+#menu_left nav ul li:hover {
+    /*Animacion hover llenar caja con otro color*/
+    border-radius   : 10px;
+    box-shadow      : 700px 0 #2D9DC6 inset;
+}
+#menu_left nav ul li a {
+    /*Estilo inicial menu_left*/
+    color           : #FFFFFF;
+    display         : inline-block;
+    font-size       : 18px;
+    margin-left     : 10px;
+    margin-right    : 0px;
+    text-decoration : none;
+}
+#menu_left nav ul li a span {
+    /*Estilo flechas derecha de boton*/
+    margin-right    : 10px;
+    margin-top      : 10px;
+}
+#menu_left nav ul li .children {
+    /*Estilo incial cajas desplegables*/
+    background  : black;
+    color       : #FFFFFF;
+    display     : none;
+    width       : 250px;
+    z-index     : 1000;
+}
+#menu_left nav ul li .children li {
+    /*Borde inferior cajas desplegadas*/
+    border-top      : solid #2d9dc6 1px;
+    cursor          : pointer; 
+    display         : block;
+    overflow        : hidden;
+    padding         : 5px 2px;
+}
+#menu_left nav ul li .children li a {
+    /*Estilo inicial submenu de menu_left*/
+    display: block;
+}
+#logo_empresa {
+    float: left;
+    padding: 10px 5px 15px 30px;
+    width: 150px;
+}
+.caret {
+    /*Posicion inicial flecha (derecha) de cajas por desplegar*/
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+    top: 5px;
+}
+#boton_menu {
+    /*Estilo incial boton_menu*/
+    background: black;
+    color: #FFFFFF;
+    display: none;
+    position: relative;
+    width: 250px;
+    z-index: 1000;
+}
+/*Fin estilo de menu_izquierda para la pagina en general*/
+
+#pestanas_principal {
+    float: left;
+    height: 30px;
+    width: calc(100% - 200px);
+    overflow-x: hidden;
+}
+#contenido {
+    /*Estilo general del div "contenido"*/
+    float       : left;
+    overflow    : scroll;
+    position    : relative;
+    width       : calc(100% - 200px);
+    z-index     : 1;
+}
+#derecha {
+    /* Estilo de boton de Usuario */
+    float: right;
+    position: relative;
+}
+#circulo img {
+    /* Estilo imagen dentro de boton Usuario */
+    /*padding: 3%;*/
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+#contenedor_toptil {
+    background      : #011826;
+    border-radius   : 10px;
+    display         : none;
+    left            : 75%;
+    margin-top      : 2px;
+    position        : absolute;
+    width           : 25%;
+    z-index         : 3;
+}
+#contenedor_toptil li {
+    width: 90%;
+}
+/* Estilo contador alertas */
+
+#contador_alertas {
+    background: red;
+    border-radius: 20px;
+    font-size: 10px;
+    left: 50px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+}
+/* Estilos tablas formularios */
+
+.descripcion {
+    background: #2D9DC6;
+    border-radius: 3px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+.detalle {
+    background: #E0E3E7;
+    border-radius: 3px;
+    padding: 5px;
+}
+#detalle_boton_prestamo {
+    display: none;
+}
+#mostrar_boton_prestamo:hover #detalle_boton_prestamo {
+    display: block;
+}
+#mostrar_boton_prestamo:hover #informacion_boton_prestamo {
+    display: none;
+}
+/* Fin estilos tablas formularios */
+
+/* Formato errores (div) que se muestran */
+
+.errores {
+    background: red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    display: none;
+    float: center;
+    font-size: 12px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+.errores2 {
+    background: red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    display: none;
+    float: center;
+    font-size: 12px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+/* Fin formato errores (div) que se muestran */
+
+/* Estilos botones formularios en general */
+
+.art {
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 2px;
+    padding: 5px;
+    width: auto;
+}
+.art:hover {
+    box-shadow: 10000px 0 #2D9DC6 inset;
+    color: #FFFFFF;
+}
+.art_exp {
+    /* Estilos para div en expedientes para que no se quiten al dar la tecla Esc. */
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 2px;
+    padding: 5px;
+    width: auto;
+}
+.art_exp:hover {
+    /* Estilos para div en expedientes para que no se quiten al dar la tecla Esc. */
+    box-shadow: 10000px 0 #2D9DC6 inset;
+    color: #FFFFFF;
+}
+.art_exp a {
+    text-decoration: none;
+}
+.hover_pointer {
+    border: 2px solid rgba(255, 255, 255, .5);
+    cursor: pointer;
+    margin-bottom: 2px;
+    padding: 5px;
+}
+.hover_pointer:hover {
+    /* Estilos para div en expedientes para que no se quiten al dar la tecla Esc. */
+    box-shadow: 10000px 0 #2D9DC6 inset;
+    color: #FFFFFF;
+}
+.botones {
+    /*color: #666;*/
+    /*background: #347280;*/
+    background      : #1e4875;
+    border-radius   : 10px;
+    color           : #FFFFFF;
+    cursor          : pointer;
+    font-size       : 24px;
+    padding         : 5px;
+    width           : 450px;
+}
+.botones:hover {
+    background-color: #2D9DC6;
+}
+.botones2 {
+    background      : #1e4875;
+    border-radius   : 10px;
+    color           : #FFFFFF;
+    cursor          : pointer;
+    font-size       : 18px;
+    padding         : 15px;
+    width           : auto;
+}
+.botones2:hover {
+    background-color: #2D9DC6;
+    color: #FFFFFF;
+}
+.botones_expediente {
+    border-radius: 10px;
+    color: #666;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+}
+.botones_expediente:hover {
+    background-color: #2D9DC6;
+    color: #FFFFFF;
+}
+.botones_expediente a {
+    text-decoration: none;
+}
+
+.boton_reporte {
+    border-radius   : 12px;
+    color           : #FFFFFF;
+    cursor          : pointer;
+    display         : inline-block;
+    height          : 150px;
+    margin          : 0 0 15px 15px;
+    padding         : 5px 12px 15px 12px;
+    width           : 240px;
+}
+.boton_reporte:hover {
+    background-color    : #63d7d7;
+}
+.cuidado {
+    background-color: #fdcd39;
+}
+.fila1 {
+    background-color: #e3e8ec;
+}
+.fila2 {
+    background-color: #D8D8D8;
+}
+.fila1 td {
+    padding: 5px;
+}
+.fila2 td {
+    padding: 5px;
+}
+.normal {
+    background-color: #0077f7;
+}
+
+/*******************************************************************************************************/
+/* Inicio estilos contenedores de alertas */
+.demo_colores {
+    color       : #FFFFFF;
+    float       : left;
+    font-size   : 30px;
+    padding     : 10px;
+}
+
+.contenedor_ubicacion_fisica_radicado {
+    background-color: #0000FF;
+}
+
+.devoluciones_pendientes {
+    background-color: #2f8df5;
+}
+
+.expedientes_fuid_sin_archivar{
+    background-color: #2aa646;
+}
+
+.no_leidos_bandeja_entrada{
+    background-color: #8FC73C;    
+}
+
+.pasos_pendientes_configuracion{
+    background-color: #fe6302;    
+}
+
+.pendientes_aprobar{
+    background-color: #0D6D96;
+}
+
+.pendientes_por_devolucion {
+    background-color: #ff2e69;
+}
+
+.pendientes_por_prestar {
+    background-color: #ce003a;
+}
+
+.radicados_sin_datos {
+    background-color: #8c4966;
+}
+
+.radicados_sin_pdf {
+    background-color: #990099;
+}
+
+.solicitudes_pendientes {
+    background-color: #7e8c8d;
+}
+
+.usuario_sin_cargo{
+    background-color: #301878;
+}
+
+.usuario_sin_firma{
+    background-color: #ba1e83;
+}
+
+.pendientes_respuesta{
+    background-color: #12AFDD;    
+}
+.n{
+    background-color: #EE1A30;    
+}
+.o{
+    background-color: #80318D;    
+}
+.p{
+    background-color: #FFA510;    
+}
+.q{
+    background-color: #5F28CE;    
+}
+.r{
+    background-color: #2A7FB8;    
+}
+.s{
+    background-color: #E51668;    
+}
+.t{
+    background-color: #34495E;    
+}
+.u{
+    background-color: #10AC84;    
+}
+.v{
+    background-color: #9B58B5;    
+}
+.w{
+    background-color: #ba1e83;    
+}
+.x{
+    background-color: #576474;    
+}
+.y{
+    background-color: #1b4b80;    
+}
+.z{
+    background-color: #3faf4b;    
+}
+/*
+Color proxima alerta 
+*/
+/* Fin estilos contenedores de alertas */
+/*******************************************************************************************************/
+
+.urgente {
+    background-color: #ed343c;
+}
+/* Fin estilos botones formularios en general */
+
+/* Estilos select en general */
+.select_opciones {
+    border-radius   : 10px;
+    padding         : 8px;
+}
+.select_opciones:hover {
+    background-color: #c7d3df;
+    border: solid 2px #2AC176;
+}
+
+/* Al enfocar un input del formulario, select o textarea pone borde color azul */
+form input:focus,
+.select_opciones:focus,
+textarea:focus{
+    border-color: #2D9DC6;
+}
+
+.checkbox_opciones {
+      cursor    : pointer;
+      display   : block;
+      height    : 30px;
+      padding   : 3px;
+      position  : relative;
+}
+
+.checkbox_contenido {
+    background      : #9f9898;
+    border          : 2px solid rgba(0,0,0,0.2);
+    border-radius   : 15px;
+    color           : #FFFFFF;
+    display         : block;
+    height          : 30px;
+    width           : 100px;
+}
+
+.checkbox_contenido:before {
+    content: attr(data-off);
+    right: 11px;
+}
+    
+.checkbox_contenido:before, .checkbox_contenido:after {
+    line-height : 1;
+    margin-top  : -7px;
+    position    : absolute;
+    top         : 50%;
+    transition  : inherit;
+}
+
+.checkbox_contenido:after {
+    color       : #FFFFFF;
+    content     : attr(data-on);
+    left        : 11px;
+    opacity     : 0;
+}
+
+.checkbox_input {
+    left        : 0;
+    opacity     : 0;
+    position    : absolute;
+    top         : 0;
+}
+
+.checkbox_input:checked ~ .checkbox_contenido {
+    background: #2AC176;
+}
+
+.checkbox_input:checked ~ .checkbox_contenido:before {
+    opacity: 0;
+}
+.checkbox_input:checked ~ .checkbox_contenido:after {
+    opacity: 1;
+}
+
+.boton_movil {
+    position        : absolute;
+    top             : 5.5px;
+    left            : 5px;
+    width           : 28px;
+    height          : 28px;
+    background      : #E0E3E7 url('../../imagenes/logo3.png')no-repeat center center;
+    background-size : 42px;
+    border-radius   : 100%;
+}
+
+.checkbox_input:checked ~ .boton_movil {
+    left    : 76px;
+    top     : 6px;
+}
+
+.checkbox_contenido, .boton_movil {
+    transition: All 0.3s ease;
+}
+
+/* Fin estilos select en general */
+
+.contenido {
+    /*height: 65%;*/
+    height: 750px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+/* Estilos formularios en general */
+.cerrar {
+    font-weight: 900;
+    text-align: right;
+}
+.cerrar a {
+    color: red;
+}
+form input {
+    /* Estilo de la barra del buscador e input internos */
+    border-radius       : 8px;
+    padding             : 6px;
+    width               : 95%;
+}
+.ventana_modal {
+    /* Formato de la ventana modal */
+    background-image    : url(../../imagenes/bg-modal.png);
+    color               : #FFFFFF;
+    display             : none;
+    height              : 100%;
+    left                : 0;
+    position            : fixed;
+    top                 : 0;
+    width               : 100%;
+}
+.ventana_modal .form {
+    /* Centrar formulario */
+    background-color    : #F0F0F0;
+    border-radius       : 20px;
+    color               : #666;
+    height              : auto;
+    left                : 10%;
+    overflow            : scroll; 
+    padding             : 25px;
+    position            : absolute;
+    right               : 10%;
+    text-align          : center;
+    top                 : 5%;
+    width               : auto;
+}
+.ventana_modal .form table {
+    /* Formato tabla en formulario Agregar Nueva Dependencia */
+    text-align  : left;
+    width       : 100%;
+}
+.input_search {
+    border-radius   : 8px;
+    padding         : 6px;
+    width           : 98%;
+}
+/*.ventana_modal .form table td{Distribuir en la mitad la tabla del formulario Agregar Nueva Dependencia
+    width: 50%;
+}
+*/
+
+/* Fin estilos formularios en general */
+
+/*Fin estilo del body*/
+
+/*Se inicia estilos al encabezado cuando es movil o ventana menos de 768px de principal3.php*/
+
+@media screen and (max-width: 768px) {
+    body {
+        /*Estilo para que inicie debajo del encabezado*/
+        padding-top: 120px;
+    }
+    #encabezado {
+        /*Estilo inicial del encabezado (movil)*/
+        /*background-image: url('../../imagenes/encabezado_principal.png'); /*Color de fondo del encabezado*/
+        /*background-image: url('../../imagenes/encabezado_principal_navidad.png'); /*Color de fondo del encabezado*/
+        background-size: 100% 60px;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    .boton_menu {
+        /*Estilo del boton menu*/
+        /*background: #023859;*/
+        background: black;
+        display: block;
+        position: fixed;
+        top: 60px;
+        width: 50%;
+    }
+    .boton_menu .bt-menu {
+        /*Estilo 2 del boton menu*/
+        color: #FFFFFF;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        overflow: hidden;
+        padding: 15px;
+        text-decoration: none;
+    }
+    .boton_menu_lateral {
+        /*Estilo boton menu_lateral*/
+        background: black;
+        display: block;
+        margin-left: 50%;
+        position: fixed;
+        top: 60px;
+        width: 50%;
+    }
+    .boton_menu_lateral .bt-menu {
+        /*Estilo 2 boton menu_lateral*/
+        color: #FFFFFF;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        overflow: hidden;
+        padding: 15px;
+        text-decoration: none;
+    }
+    #derecha {
+        /* Estilo de boton de Usuario */
+        position: absolute;
+    }
+    #contenedor_toptil {
+        left: 0%;
+        margin-left: 20px;
+        margin-top: 80;
+        position: absolute;
+        width: 75%;
+        z-index: 2;
+    }
+    #encabezado nav {
+        /*Estilo inicial submenu encabezado*/
+        background: black;
+        height: calc(100% - 120px);
+        margin: 0;
+        overflow: scroll;
+        position: fixed;
+        right: 100%;
+        top: 104px;
+        width: 80%;
+    }
+    #encabezado nav ul li a {
+        /*Estilo inicial encabezado submenu2*/
+        display: inline-block;
+    }
+    #encabezado nav ul li .children {
+        /*Estilo inicial encabezado submenu*/
+        position: relative;
+        width: 100%;
+    }
+    #encabezado nav ul li:hover .children {
+        /*Estilo para que no se vea la animación 
+        de llenar la casilla en los dispositivos móviles*/
+        display: none;
+    }
+    #menu_left nav {
+        /*Estilos menu_left moviles*/
+        background: black;
+        height: calc(100% - 120px);
+        margin: 0;
+        overflow: scroll;
+        position: fixed;
+        right: 100%;
+        top: 104px;
+        width: 80%;
+    }
+    #menu_left nav ul li a {
+        /*Estilo bloques en menu_left*/
+        display: inline-block;
+    }
+    #menu_left nav ul li a span {
+        /*Estilo flechas derecha de boton*/
+        margin-top: 0px;
+    }
+    #menu_left nav ul li .children {
+        /*Posición y ancho de submenús desplegados*/
+        position: relative;
+        width: 100%;
+    }
+    #menu_left nav ul li .children li a {
+        /*Margen de los titulos de submenús*/
+        margin-left: 20px;
+    }
+    #menu_left nav ul li:hover .children {
+        /*Estilo para que no muestre animacion llenar casilla en móviles*/
+        display: none;
+    }
+    .caret {
+        /*Boton flechas (derecha) en submenu*/
+        position: absolute;
+        font-size: 25px;
+        right: 10px;
+    }
+    #boton_menu {
+        /*Estilo incial boton_menu*/
+        display: block;
+    }
+    /* Desde aqui es el estilo para móviles del contenido*/
+    #contenido {
+        width: 100%;
+    }
+    /* Hasta aqui es el estilo para móviles del contenido*/
+}
+/*Hasta aqui terminan los estilos al encabezado cuando es movil o ventana menos de 768px     de principal3.php*/

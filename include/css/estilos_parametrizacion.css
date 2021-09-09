@@ -1,0 +1,143 @@
+.center{
+	text-align: center;
+}
+.encabeza td{
+	background-color 	: #e0e6e7;
+	font-size 			: 20px;
+  	padding 			: 10px;
+}
+.modif:hover{
+	background-color 	: #a8bac6;
+	color 				: #FFFFFF;
+	cursor 				: pointer;
+}
+/* Estilo de los resultados de consulta */
+/*.fila1{
+	background-color: blue;
+}
+.fila2{
+	background-color: red;
+	text-decoration: none;
+}
+*/
+.row{
+	background-color: #D8D8D8;
+	font-size: 20px;
+	text-align: center;
+}
+/* Fin estilo de los resultados de consulta */
+/* Estilos "Ventana" */
+.ventana{ /* Formato de la ventana modal del Formulario de Agregar Municipio */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.ventana .form{ /* Formato del formulario Nuevo tipo documento*/
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	color: #666;
+	height: auto;
+	left: 25%;
+	padding: 25px;
+	position: absolute;
+	right: 25%;
+	text-align: center;
+	top: 15%;
+	width: auto;
+}
+.ventana .form table{ /* Formato tabla en formulario Agregar Nuevo tipo documento */
+	font-size: 20px;
+	text-align: left;
+	width: 100%;
+}
+/* Fin estilos "Ventana" */
+.form input{ /* Estilo de la barra del buscador e input internos */
+	/*background-color:#FFFFFF;*/
+	border-radius: 8px;
+	padding: 6px;
+	width: 95%;
+}
+/* Estilos "Cerrar" */
+.cerrar{
+	font-weight: 900;
+	text-align: right;
+}
+.cerrar a{
+	color: red;
+}
+/* Fin estilos "Cerrar" */
+/* Estilos sugerencias tipo documento */ 
+.art{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: 15px;
+	padding: 5px;
+	width: 80%;
+}
+.art:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art a{
+	display: block;	
+	text-decoration: none;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+/* Fin estilos sugerencias tipo documento formulario modificar */
+/* Estilos sugerencias tipo documento */
+.art_mod{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: 15px;
+	padding: 5px;
+	width: 80%;
+}
+.art_mod:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art_mod a{
+	display: block;	
+	text-decoration: none;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+/* Fin estilos sugerencias tipo documento formulario modificar */
+
+
+/* Estilos movil */
+@media screen and (max-width: 768px){
+	/* Estilos "Ventana" */
+	.ventana .form{ /* Formato del formulario Nuevo tipo documento*/
+		left: 10%;
+		right: 10%;
+		top: 20%;
+	}
+	.ventana .form table{ /* Formato tabla en formulario Agregar Nuevo tipo documento */
+		text-align: left;
+		width: 100%;
+	}
+	/* Fin estilos "Ventana" */
+	/* Estilos "Ventana2" */
+/*	#ventana2 .form{ /* Formato del formulario Modificar tipo documento*/
+/*		left: 10%;
+		right: 10%;
+		top: 20%;
+	}
+	#ventana2 .form table{ /* Formato tabla en formulario Modificar tipo documento */
+/*		text-align: left;
+		width: 100%;
+	}
+	/* Fin estilos "Ventana2" */
+}
+/* Fin estilos movil */

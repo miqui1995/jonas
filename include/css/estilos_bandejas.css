@@ -1,0 +1,267 @@
+/* La fuente Roboto Condensed ha sido importada en el archivo principal3.php y la hereda a admin_depe */
+
+/* Estilos de barra de herramientas */
+#barra_herramientas{
+	background-color: #D8D8D8;
+	height: 50px;
+	width: 100%;
+}
+
+#checkbox1{ /* Formato checkbox selecciona/deselecciona todos */
+	padding: 15px;
+}
+.checkbox{ /* Formato checkbox selecciona/deselecciona uno a uno */
+	padding : 4px;
+	width 	: 20px;
+}
+
+/* Esta clase "img" la agrega/quita con javascript */
+.img{
+	display: inline-block;
+	height:50px;
+	opacity: 1;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 50px;
+}
+.img:hover{
+	background-color:#2D9DC6;
+	cursor: pointer;
+}
+.img1{ /* Formato por defecto de las imagenes de la barra de herramientas */
+	cursor:not-allowed;
+	display: none;
+	height:50px;
+	opacity: 0.5;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 50px;
+}
+.titulo_bh{ /* Formato por defecto del titulo de la barra de herramientas */
+	color 		: #0A7688;
+	display 	: block;
+	font-style 	: italic;
+	padding-top : 10px;
+}
+.titulo_bh1{ /* Formato por defecto del titulo de la barra de herramientas */
+	display: none;
+}
+/* Fin estilos de barra de herramientas */
+/* Estilos lista_radicados */
+#lista_radicados{ 
+	/*height 		: 100%;*/
+	/*width 		: 100%;*/
+	/*overflow 	: scroll;*/
+}
+.fila_resultados{	/* Formato resultados del listado bandejas entrada/salida */
+	background-color: #e0e6e7;
+	color: green;
+	cursor: pointer;
+	font-weight: bold;
+}
+.fila_resultados:hover{
+	box-shadow: 10000px 0 #D2D2D2 inset;
+	color: black;
+}
+.fila_resultados span{ /* Tamaño de fuente listado radicados */
+	font-size: 14px;
+}
+
+.fila_resultados2{	/* Formato resultados del listado bandejas entrada/salida */
+	background-color 	: #EAEBF0DE;
+	color 			 	: green;
+	cursor 				: pointer;
+	font-weight 		: bold;
+}
+.fila_resultados2:hover{
+	box-shadow  : 10000px 0 #D2D2D2 inset;
+	color 		: black;
+}
+.fila_resultados2 span{ /* Tamaño de fuente listado radicados */
+	font-size 	: 14px;
+}
+
+.leido{	/* Formato cuando un radicado ya esta leido. */ 
+	color:#666;
+	font-weight: normal;
+}
+/* Fin estilos lista_radicados */
+/* Estilo nombre_contacto resultados del listado bandejas entrada/salida */
+#nombre_contacto{
+	/*float: right;*/
+	padding : 5px;
+}
+/* Fin estilo nombre_contacto resultados del listado bandejas entrada/salida */
+/* Estilo Fecha resultados del listado bandejas entrada/salida */
+#fecha{
+	padding-right: 5px;
+}
+/* Fin estilo Fecha resultados del listado bandejas entrada/salida */
+/* Estilo termino resultados del listado bandejas entrada/salida */
+#numero_expediente{
+	padding: 5px;
+}
+/* Fin estilo termino resultados del listado bandejas entrada/salida */
+/* Estilo Numero radicado resultados del listado bandejas entrada/salida */
+#num_radicado{
+	padding: 5px;
+}
+/* Fin estilo Numero radicado resultados del listado bandejas entrada/salida */
+
+/* Estilo Asunto resultados del listado bandejas entrada/salida */
+#asunto{
+	/*float: left;*/
+	/*padding-left: 20px;*/
+	padding : 5px;
+}
+/* Fin estilo Asunto resultados del listado bandejas entrada/salida */
+/* Estilo de la paginacion del listado bandejas entrada/salida */
+.pagina_actual{
+	background-color: #2D9DC6;
+	border-color 	: #2D9DC6;
+	border-style 	: solid;
+	border-width 	: 1px;
+	color 			: white;
+	display 		: inline-block;
+	font-size 		: 15px;
+	margin-left 	: 3px;
+	text-decoration : none;
+	width 			: 25px;
+}
+.paginas{
+	border-color 		: #2D9DC6;
+	border-radius 		: 4px;
+	border-style 		: solid;
+	border-width 		: 1px;
+	display 			: inline-block;
+	font-size 			: 15px;
+	margin 				: 1px;
+	text-decoration 	: none;
+	width 				: 25px;
+}
+.paginas:hover{
+	background-color 	: #E0E3E7;
+	border-radius 		: 8px;
+}
+.pagina_actual:hover{
+	border-color 		: #F0F0F0;
+	border-radius 		: 8px;
+}
+/* Fin estilo de la paginacion del listado bandejas entrada/salida */ 
+
+
+/* Estilos acordeon */
+button.accordion {
+    /*border 				: none;*/
+    background-color 	: #ddd;
+    color 				: #023859;
+    cursor 				: pointer;
+    font-size 			: 18px;
+    outline 			: none;
+    padding 			: 10px 20px;
+    text-align 			: left;
+    transition 			: 0.4s;
+    width 				: 100%;
+}
+button.accordion2 {
+    background-color 	: #f1f1f1;
+    border 				: none;
+    color 				: black;
+    cursor 				: pointer;
+    font-size 			: 18px;
+    outline 			: none;
+    padding 			: 18px;
+    text-align 			: left;
+    transition 			: 0.4s;
+    width 				: 99%;
+}
+
+button.accordion.active, button.accordion:hover , button.accordion2:hover{
+	box-shadow 	: 10000px 0 #2D9DC6 inset;
+	color 		: #FFFFFF;
+}
+
+div.panel{
+	/*max-height 			: 400px; es posible 75vh*/
+    /*overflow 			: auto;*/
+    background-color 	: white;
+    display 			: none;
+    width 				: 100%;
+    transition 			: 0.4s;
+}
+
+.accordion:after {
+  	content 	: '+'; /* Escribir el signo "mas" (+) */
+  	float 		: right;
+}
+
+.active:after {
+  	content 	: "-"; /* Escribir el signo "menos" (-) */
+}
+
+/*div.panel td{
+	padding: 10px;
+}*/
+.semaforo_amarillo{
+	background-color 	: #f1ff4f;
+	border-radius 		: 5px;
+	color 				: #666;
+	padding 			: 10px;
+}
+.semaforo_rojo{
+	background-color 	: #ff1f1f;
+	border-radius 		: 5px;
+	color 				: #FFFFFF;
+	padding 			: 10px;
+}
+.semaforo_verde{
+	background-color 	: green;
+	border-radius 		: 5px;
+	color 				: #FFFFFF;
+	padding 			: 10px;
+}
+/* Fin estilos acordeon */
+
+#imagen_principal{
+	float 	: right;
+	width 	: 100%;
+}
+.row{
+	background-color : #D8D8D8;
+	font-size 		 : 15px;
+	text-align 		 : center;
+}
+#table{
+	display 	: inline-block;
+	position 	: relative;
+	width 		: 100%;
+}
+/* Inicia parte del formulario envío de radicado */
+#ventana_solicitar_prestamo{ /* Formato de la ventana modal de Agregar Nueva Dependencia */
+	background-image: url(../../imagenes/bg-modal.png);
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana_solicitar_prestamo .form{ /* Centrar formulario Agregar Nueva Dependencia */
+	background-color: #F0F0F0;
+	border-radius: 20px;
+	color: #666;
+	height: auto;
+	left: 20%;
+	padding: 25px;
+	position: absolute;
+	right: 20%;
+	text-align: center;
+	top: 10%;
+	width: auto;
+}
+#ventana_solicitar_prestamo .form table{/* Formato tabla en formulario Agregar Nueva Dependencia */
+	text-align: left;
+	width: 100%;
+}
+/* Fin parte del formulario envío de radicado*/

@@ -1,0 +1,1 @@
+alter sequence secuencia_inventario restart 1

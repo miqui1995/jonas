@@ -1,0 +1,103 @@
+<html><!--Aqui inicia el codigo html-->
+    <head><!--Aqui inicia la cabezera del codigo html-->
+        <title>Formulario a generar en pdf</title><!--Aqui se asigna el texto que va a salir en la pestaña-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!--Esto es para que acepte caracteres raros como 'ñ'y signos de puntuacion-->
+    
+    <!--Aqui inicia el codigo javascript-->
+    <script>
+        // Funcion para limitar el numero de caracteres del campo radicado
+        function limitar(e, contenido, caracteres)
+        {//inicia la funcion limitar
+            
+            var unicode=e.keyCode? e.keyCode : e.charCode;// obtenemos la tecla pulsada y se le asigna a 'unicode'
+ 
+            // Permitimos las siguientes teclas:
+            // 8 backspace
+            // 46 suprimir
+            // 13 enter
+            // 9 tabulador
+            // 37 izquierda
+            // 39 derecha
+            // 38 subir
+            // 40 bajar
+            if(unicode==8 || unicode==46 || unicode==13 || unicode==9 || unicode==37 || unicode==39 || unicode==38 || unicode==40)
+                return true;
+ 
+            // Si ha superado el limite de caracteres devolvemos false lo cual hara que no lo deje escribir mas caracteres
+            if(contenido.length>=caracteres)
+                return false;//retorna falso
+ 
+            return true;//retorna falso lo cual permite que siga escribiendo caracteres
+        }//finaliza la funcion limitar
+    </script><!--aqui finaliza el codigo javascript-->
+    </head><!--Aqui finaliza la cabezera del codigo html-->
+    <body><!--Aqui inicia el cuerpo del codigo html-->
+        <center><!--Desde aqui se va a centrar todo el contenido que este en la etiqueta <center></center>-->
+
+            <!--Aqui se le da un nombre al formulario que en este caso es 'pdf', el formulario va a enviar los datos por metodo POST,y cuando se pulse la tecla Enter lo va a enviar a la pagina 'generador.php'-->
+            <form name='pdf' method='post' action='generador.php' >
+                <br><!--Salto de linea-->
+                <br><!--Salto de linea-->
+                <br><!--Salto de linea-->
+                <br><!--Salto de linea-->
+                Digite la fecha en la que se genero el documento:
+                <br><!--Salto de linea-->
+                <input type='date' name='fecha_actual' /><!--Campo input tipo date(fecha) y se le asigna el nombre 'fecha_actual'-->
+                <br><!--Salto de linea-->
+                Digite el nombre de quien genera el documento:
+                <br><!--Salto de linea-->
+                <input type='text' name='nombre' /><!--Campo input tipo texto y se le asigna el nombre 'nombre'-->
+                <br><!--Salto de linea-->
+                En nombre de quien esta generando este documento:
+                <br><!--Salto de linea-->
+                <input type='text' name='en_nombre_de_quien' /><!--Campo input tipo texto y se le asigna el nombre 'en_nombre_de_quien'-->
+                <br><!--Salto de linea-->
+                Digite el cargo de en nombre de quien se esta generando este documento:
+                <br><!--Salto de linea-->
+                <input type='text' name='cargo_remitente' /><!--Campo input tipo texto y se le asigna el nombre 'cargo_remitente'-->
+                <br><!--Salto de linea-->
+                Digite la en donde se genera el documento ciudad:
+                <br><!--Salto de linea-->
+                <input type='text' name='ciudad' /><!--Campo input tipo texto y se le asigna el nombre 'ciudad'-->
+                <br><!--Salto de linea-->
+                Digite a quien va dirigido:
+                <br><!--Salto de linea-->
+                <input type='text' name='dirigido' /><!--Campo input tipo texto y se le asigna el nombre 'dirigido'-->
+                <br><!--Salto de linea-->
+                El cargo de a quien va dirigido:
+                <br><!--Salto de linea-->
+                <input type='text' name='cargo' /><!--Campo input tipo texto y se le asigna el nombre 'cargo'-->
+                <br><!--Salto de linea-->
+                Empresa en la que trabaja el dirigido:
+                <br><!--Salto de linea-->
+                <input type='text' name='empresa' /><!--Campo input tipo texto y se le asigna el nombre 'empresa'-->
+                <br><!--Salto de linea-->
+                Direccion a donde va dirigido:
+                <br><!--Salto de linea-->
+                <input type='text' name='direccion' /><!--Campo input tipo texto y se le asigna el nombre 'direccion'-->
+                <br><!--Salto de linea-->
+                Digite el asunto del documento:
+                <br><!--Salto de linea-->
+                <input type='text' name='asunto' /><!--Campo input tipo texto y se le asigna el nombre 'asunto'-->
+                <br><!--Salto de linea-->
+                Digite el texto con el cual quiere generar el pdf:
+                <br><!--Salto de linea-->
+                <textarea name="texto"  cols="30" rows="10"></textarea>
+               
+                <br><!--Salto de linea-->
+                Digite el numero de radicado:
+                <br><!--Salto de linea-->
+                <input type='number' name='radicado'  onKeyUp="return limitar(event,this.value,10)" onKeyDown="return limitar(event,this.value,10)" /><!--Campo input tipo texto y se le asigna el nombre 'texto'-->
+                <br><!--Salto de linea-->
+                <br><!--Salto de linea-->
+                <br><!--Salto de linea-->
+                Digite <b><i>UNA</i></b> palabra clave para la marca de agua: 
+                <br><!--Salto de linea-->
+                <input type='text' name='marca_de_agua' /><!--Campo input tipo texto y se le asigna el nombre 'marca_de_agua'-->
+                <br><!--Salto de linea-->
+                <br><!--Salto de linea-->
+                <input type='submit' value='Generar PDF' /><!--Campo input tipo submit con valor 'value='Generar PDF''-->
+            </form><!--Fin del Fomulario-->
+        </center><!--Fin del contenido centrado-->
+    </body><!--Fin del cuuerpo del codigo html-->
+</html><!--Fin del codigo html-->

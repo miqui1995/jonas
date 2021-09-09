@@ -1,0 +1,123 @@
+/* La fuente Roboto Condensed ha sido importada en el archivo principal3.php y la hereda a admin_usuarios */
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed'); */
+
+#table{/* Formato tabla en formulario radicación de entrada */
+	table-layout : fixed;
+	text-align 	 : left;
+	width 		 : 100%;
+}
+#table tr td{
+	padding-left : 10px;
+}
+
+.form input{ /* Estilo de la barra del buscador e input internos */
+	border-radius: 8px;
+	margin-left: 15px;
+	padding: 6px;
+	width: 80%;
+}
+.sugerencia_contacto{ /* Estilo sugerencias principal */
+	min-height: 100px;
+	width: 90%;
+}
+.center{
+	text-align: center;
+}
+#titulo_formulario{
+	margin-top: -20px;
+}#subtitulo_formulario{
+	margin-top: -20px;
+}
+
+/*Se inicia estilos para el resultado de buscador_remitente.php*/
+.art{
+	background-color: #F1F1F1;
+	border-radius: 10px;
+	display: block;
+	margin-left: 10px;
+	padding: 5px;
+	padding-left: 20px;
+	width: auto;
+	max-width: 90%;
+}	
+.art:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art a{
+	display: block;	
+	text-decoration: none;
+/*	margin-left: 15px;
+	margin-top: 5px;
+*/
+}
+.art a:hover{
+	color: #FFFFFF;
+}
+.art span{
+	font-size: 15px;
+}
+/* Estilos para desplegable de municipios */
+.art1{
+	background-color 	: #F1F1F1;
+	border-radius 		: 10px;
+	display 			: block;
+	padding 			: 5px 12px 5px 12px;
+	width 				: auto;
+}	
+.art1:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art1 a{
+	display 		: block;	
+	text-decoration : none;
+}
+.art1 a:hover{
+	color: #FFFFFF;
+}
+.art1 span{
+	font-size: 15px;
+}
+.fila1{
+	background-color: #e3e8ec;
+}
+.fila2{
+	background-color: #F1F7F9;
+}	
+/* Fin estilos para desplegable de municipios */
+.titulo{ /*Formato de la letra del listado de remitentes encontrados en la busqueda de radicación entrada*/
+	font-size: 25px;
+}
+/*Fin de estilos para el resultado de buscador_municipios.php*/
+
+#contenedor img{
+	width: 100px;
+}	
+/* Se inicia estilos formulario modificacion rapida */
+#ventana{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#ventana form input{ /* Formato de la ventana modal del Formulario de Agregar Usuario */
+	border-radius: 8px;
+	padding: 6px;
+	width: 98%;
+}
+/* Fin estilos formulario modificacion rapida */
+/* Inicio estilos formulario modificacion inventario */
+.input_inv{
+	padding: 6px;
+	width: 100%;
+}
+/* Fin estilos formulario modificacion inventario */
+
+/*Se inicia estilos al form cuando es movil o agregar_contacto menos de 768px
+ de idex_entrada.php*/
+/*
+
+@media screen and (max-width: 768px){
+	
+
+}
+/*Fin estilos al form cuando es movil o agregar_contacto menos de 768px de index_entrada.php*/

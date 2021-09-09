@@ -1,0 +1,216 @@
+/*Estilos para la pagina en general*/
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+*{
+	font-family: "Roboto Condensed", sans-serif;
+	padding: 0;
+	margin: 0;
+}*/
+body{
+	background-color: #F0F0F0; 
+	color: #666;
+	font-family: "Roboto", sans-serif; 
+}
+.form input{ /* Estilo de la barra del buscador e input internos */
+	/*background-color:#FFFFFF;*/
+	border-radius: 8px;
+	padding: 6px;
+	width: 80%;
+}
+#ventana{ /* Formato de la ventana modal del Formulario de Agregar Usuario */
+	/*background-image: url(../../imagenes/bg-modal.png);*/
+	color: #FFFFFF;
+	display: block;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+}
+#ventana .formulario{ /* Formato del formulario Nuevo Usuario */
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	color: #666;
+	left: 20%;
+/*	max-height: 450px; 
+	overflow-y: scroll; */
+	padding: 25px;
+	position: absolute;
+	right: 20%;
+	text-align: center;
+	top: 5%;
+	width: auto;
+}
+#ventana .formulario table{ /* Formato tabla en formulario Agregar Nuevo Usuario */
+	font-size: 20px;
+	text-align: left;
+	width: 100%;
+}
+#ventana .formulario table td input{/* Tamaño de los input en tabla del Formulario Agregar Nuevo Usuario*/
+	border-radius: 8px;
+	padding: 6px;
+	width: 95%;
+}
+#ventana2{ /* Formato de la ventana modal de Modificar Usuario */
+	background-image: url(../../imagenes/bg-modal.png);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#ventana2 .form{ /* Centrar formulario Modificar Usuario */
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	color: #666;
+	left: 20%;
+	max-height: 450px;
+	overflow-y: scroll;
+	padding: 25px;
+	position: absolute;
+	right: 20%;
+	text-align: center;
+	top: 5%;
+	width: auto;
+}
+#ventana2 .form table{ /* Formato tabla en formulario Modificar Usuario  */
+	text-align: left;
+	width: 100%;
+}
+.cerrar{
+	font-weight: 900;
+	text-align: right;
+}
+.cerrar a{
+	color: red;
+}
+#desplegable_resultados{
+	min-height: 100px;
+	width: 90%;
+}
+.center{
+	text-align: center;
+}
+.footer{
+	clear: both;
+	color: #252932;
+	font-size: 14px;
+}
+/*Se inicia estilos para el resultado de buscador_usuarios.php*/
+.fila1{
+	background-color: #e3e8ec;
+}
+.fila2{
+	background-color: #D8D8D8;
+}
+.art{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: 15px;
+	padding: 5px;
+	width: 80%;
+}
+.art:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art a{
+	display: block;	
+	text-decoration: none;
+}
+.art a:hover{
+	color: #FFFFFF;
+}
+.art span{
+	font-size: 15px;
+}
+.art1{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	border-radius: 10px;
+	display: block;
+	margin-bottom: 2px;
+	margin-left: 15px;
+	padding: 5px;
+	width: 300px;
+}
+.art1:hover{
+	box-shadow: 10000px 0 #2D9DC6 inset;
+	color: #FFFFFF;
+}
+.art1 a{
+	display: block;	
+	text-decoration: none;
+}
+.art1 a:hover{
+	color: #FFFFFF;
+}
+.art1 span{
+	font-size: 15px;
+}
+.fotos{
+	border-radius: 8px;
+}
+.tooltip {
+    border-bottom: 1px dotted black;
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    background-color: black;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 5px 10;
+    text-align: center;
+    visibility: hidden;
+    width: auto;
+    
+    /* Posicion del tooltip */
+    left: 25%;
+    margin-left: -60px;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/*Fin de estilos para el resultado de buscador_usuarios.php*/
+
+/* Se inicia estilos al form de usuarios cuando es movil o ventana menos de 768px */			
+@media screen and (max-width: 768px){
+	.art{
+		width: auto;
+	}
+	.art1{
+		width: auto;
+	}
+	#ventana{
+		height: 100%; /*Si height es 100% hace la animacion de display hacia abajo*/
+	}
+	#ventana .formulario{
+		height: 70%;
+		left: 2%;
+		right: 2%;
+		text-align: center;
+		top: 2%;
+		width: auto;
+
+	}
+	#ventana2{
+		height: 100%; /*Si height es 100% hace la animacion de display hacia abajo*/
+	}
+	#ventana2 .form{
+		height: 70%;
+		left: 2%;
+		right: 2%;
+		top: 20%;
+		width: auto;
+	}
+}
+/* Fin estilos al form cuando es movil o ventana menos de 768px de principal3.php*/	

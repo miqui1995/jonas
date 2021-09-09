@@ -1,0 +1,56 @@
+ #resultados_masiva{
+    display: none;
+/*	height: 90%;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	width: 100%;*/
+}
+/*.boton{
+    background: #2D9DC6;
+    border-radius: 20px;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+.boton:hover{
+    color: #FFFFFF;
+}*/
+.encabezado{
+    padding     : 5px 10px;
+    text-align  : center;
+}
+.encabezado1{
+    background-color    : #666;
+    color               : #FFFFFF;
+}
+.celda{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fila1{
+    background-color: #D8D8D8;
+}
+.fila2{
+    background-color: #e0e6e7;
+}
+.busq_av{
+    display: none;
+}
+.detalle_busqueda{
+    display: none;
+}
+.error{
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #FFFFFF;
+    float: center;
+    font-size: 16px;
+    padding: 5px;
+    position: relative; 
+    text-align: center;
+}
+table input{ /* Estilo de la barra del buscador e input internos */
+    border-radius: 8px;
+    padding: 6px;
+    width: 90%;
+}

@@ -1,0 +1,133 @@
+/* Inicio estilos del checkbox */
+/* El contenedor */
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 20px;
+/*  user-select: none; */
+}
+
+/* Esconder del navegador el checkbox por defecto */
+.container input {
+    opacity: 0;
+}
+
+/* Crear un checkbox personalizado */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+}
+
+/* En el mouse-over, mostrar el boton gris como color de background */
+.container:hover input ~ .checkmark {
+    background-color: grey;
+}
+
+/* Cuando el checkbox sea seleccionado, agregar background azul */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Crear el indicador/checkmark (hidden cuando no esté seleccionado) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+/* Estilo del indicador/checkmark */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+/* Fin estilos del checkbox */
+.boton{
+    background: #2D9DC6;
+    border-radius: 9px;
+    font-size: 20px;
+    padding: 5px 40px ;
+}
+.boton:hover{
+    color: #FFFFFF;
+}
+.encabezado{
+    text-align: center;
+}
+.encabezado1{
+    background-color: #666;
+    color: #FFFFFF;
+}
+table input{  
+    border-radius: 8px;
+    padding: 6px;
+    width: 90%;
+}
+.error{
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #FFFFFF;
+    display: none;
+    float: center;
+    font-size: 16px;
+    padding: 5px;
+    position: relative; 
+    text-align: center;
+}
+#resultados{    /* Estilos Resultado Consulta por Radicados */
+    display: none;
+    height: 5 5%;
+/*    overflow-x: scroll;
+    overflow-y: scroll;
+*/    width: 100%;
+}
+#resultados2{   /* Estilos Resultado Consulta por Expediente */
+    display: none;
+    height: 5 5%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
+}
+#resultados3{   /* Estilos Resultado Consulta por inventario */
+    display: none;
+    height: 5 5%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
+}
+#resultados4{
+    display: none;
+    width: 100%;
+}
+.checkbox{ /* Formato checkbox resultado consultas selecciona/deselecciona uno a uno */
+    display: inline-block;
+    padding-top: 4px;
+    width: 20px;
+}
+.art_busc{   /* Formato resultados del listado bandejas entrada/salida */
+    background-color : #e0e6e7;
+    color            : #666;
+    cursor           : pointer;
+    font-size        : 12px;
+}
+.art_busc td{
+    border-top       : 1px solid #FFFFFF;
+}
+.art_busc:hover{
+    box-shadow: 10000px 0 #D2D2D2 inset;
+    color: black;
+}
+
+/*  Fin formato resultado consultas por radicado */
