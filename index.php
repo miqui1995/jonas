@@ -42,6 +42,7 @@
 			</span>
 			<h1 style="margin-top:-1px;">SIGDEA</h1>
 			<h2 style="margin-top:-3%;"> Sistema Integrado de Gestión Documental Electrónica y Archivo <span id="nombre_entidad"></span> 	<!-- En algunas entidades quieren el nombre de la entidad --></h2>	
+			<h2 style="margin-top:-3%;"> Alcaldia de Roberto Payan <span id="nombre_entidad"></span> 	<!-- En algunas entidades quieren el nombre de la entidad --></h2>	
 			<div id="cont_logo_empresa" style="margin-top: -15px;">
 				<img src="imagenes/iconos/logo_largo.png" class="center" width="250px" style="background-color: #FFFFFF; border-radius: 20px; margin-top: -15px;"> 	
 			</div>		
